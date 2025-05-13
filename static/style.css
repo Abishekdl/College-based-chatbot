@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background: transparent;
+}
+.right-corner {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+
+/* CHATBOX
+=============== */
+.chatbox {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    width: 400px;
+    height: 600px;
+    z-index: -123456;
+    opacity: 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: all .5s ease-in-out;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+}
+
+/* BUTTON */
+.chatbox__button {
+    text-align: right;
+}
+
+.send__button {
+    padding: 6px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* HEADER */
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+
+/* MESSAGES */
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.chatbox__support {
+    display: flex;
+    background: #f9f9f9;
+    height: 500px;
+    width: 410px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* HEADER */
+.chatbox__header {
+    background: #131328;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: var(--primaryBoxShadow);
+}
+
+.agent-chat{
+    display: flex;
+        width: 50px;  /* Adjust the width as per your design */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Add spacing between image and text */
+        border-radius: 50%; /* Make it circular */
+}
+
+.chatbox__image--header {
+  margin-left: 10px;
+  right: 10px;
+  border-radius: 40px;
+  background: #f1f0f0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+img.size{
+    width: fit-content;
+    display: flex;
+    position: relative;
+    left: 0px;
+}
+
+.chatbox__heading--header {
+    font-size: 1.2rem;
+    color: white;
+    width: fit-content;
+}
+
+.chatbox__description--header {
+    font-size: .9rem;
+    color: white;
+}
+
+/* Messages */
+.chatbox__messages {
+    padding: 0 20px;
+}
+
+.messages__item {
+    margin-top: 10px;
+    background: #E0E0E0;
+    padding: 8px 12px;
+    width: 390px;
+}
+
+.messages__item--visitor,
+.messages__item--typing {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.messages__item--operator {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: var(--primary);
+    color: white;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: white;
+    box-shadow: var(--secondaryBoxShadow);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+    border: #131328;
+}
+.chatbox__footer input {
+    width: 80%;
+    padding: 12px 12px;
+    border-radius: 18px;
+    text-align: left;
+}
+
+.chatbox__send--footer {
+    color: black;
+}
+
+.chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: url(chatbot.svg); /* Replace chatbot.svg with your SVG background image */
+    background-size: cover; /* Ensure the background image covers the button */
+    cursor: pointer;
+    border-radius: 50%;
+    width: 70px; /* Adjust button width */
+    height: 70px; /* Adjust button height */
+    transition: transform 0.3s ease;
+}
+
+.chatbox__button button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: If you want the button to have a circular shape */
+.chatbox__button button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image covers the button */
+}
+
+/* Hover effect class */
+.hover-effect {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);/* Define your hover effect styles here */
+}
+
+.chatbot-image {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 10px; /* Adds spacing between image and text */
+}
+
+.chatbot-text {
+    background-color: #f1f0f0; /* Background color for chatbot messages */
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 70%; /* Adjust as needed */
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-message {
+    justify-content: flex-end; 
+}
+
+.bot-message {
+    justify-content: flex-start;
+    border-radius: 10px; 
+    background-color:rgb(255,240 ,251);
+}
+
+.message img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+    background-color: white;
+    border-radius: 40px;
+    float : left;
+    /* align-self: flex-end;
+    justify-self: flex-end; */
+}
+
+.user-image {
+    margin-left: 10px;
+    border-radius: 40px;
+    background: #f1f0f0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}

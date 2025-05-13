@@ -1,0 +1,1140 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey there"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! How can I help you?",
+        "Hey! What can I do for you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "Take care! Bye for now.",
+        "See you later!"
+      ],
+      "context_reset": true
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Appreciate it"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Glad to help!",
+        "No problem!"
+      ]
+    },
+    {
+      "tag": "options",
+      "patterns": [
+        "What can you do?",
+        "What are your capabilities?",
+        "How can you assist me?"
+      ],
+      "responses": [
+        "I can help you with course information, schedule queries, fee details, and more. Just let me know what you need."
+      ]
+    },
+    {
+      "tag": "schedule",
+      "patterns": [
+        "What's my schedule?",
+        "View my timetable",
+        "Class schedule"
+      ],
+      "responses": [
+        "Please provide me with your student ID so I can retrieve your schedule."
+      ]
+    },
+    {
+      "tag": "fee_details",
+      "patterns": [
+        "Fee structure",
+        "fees structure",
+        "Tuition fees",
+        "Payment details"
+      ],
+      "responses": [
+        "Our fee structure varies based on the course and semester. Please provide your student ID for detailed fee information."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "Contact information",
+        "How to reach college"
+      ],
+      "responses": [
+        "You can contact us at 123-456-7890 or email us at AS@college.edu for any inquiries."
+      ]
+    },
+    {
+      "tag": "website",
+      "patterns": [
+        "College website",
+        "Website link",
+        "Visit website"
+      ],
+      "responses": [
+        "Our college website is www.college.edu. You can find detailed information about courses, admissions, and more on our website."
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [
+        " ",
+        "dskd"
+      ],
+      "responses": [
+        "I'm sorry, I didn't understand that. Can you please rephrase or ask another question?"
+      ]
+    },
+    {
+      "tag": "inspire",
+      "patterns": [
+        "Who inspires you?",
+        "who is your inspiration",
+        "who motivates you"
+      ],
+      "responses": [
+        "Personally, I find Gv viswanathan sir very inspiring. I might not be very fair though."
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "what is the name of your developers",
+        "what is the name of your creators",
+        "what is the name of the developers",
+        "what is the name of the creators",
+        "who created you",
+        "your developers",
+        "your creators",
+        "who are your developers",
+        "developers",
+        "you are made by",
+        "you are made by whom",
+        "who created you",
+        "who create you",
+        "creators",
+        "who made you",
+        "who designed you"
+      ],
+      "responses": [
+        "College students:Abishek,singaravelan"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "timing of college",
+        "what is college timing",
+        "working days",
+        "when are you guys open",
+        "what are your hours",
+        "hours of operation",
+        "when is the college open",
+        "college timing",
+        "what about college timing",
+        "is college open on saturday",
+        "tell something about college timing",
+        "what is the college  hours",
+        "when should i come to college",
+        "when should i attend college",
+        "what is my college time",
+        "college timing",
+        "timing college"
+      ],
+      "responses": [
+        "College is open 8am-5pm Monday-Saturday!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "number",
+      "patterns": [
+        "more info",
+        "contact info",
+        "how to contact college",
+        "college telephone number",
+        "college number",
+        "What is your contact no",
+        "Contact number?",
+        "how to call you",
+        "College phone no?",
+        "how can i contact you",
+        "Can i get your phone number",
+        "how can i call you",
+        "phone number",
+        "phone no",
+        "call"
+      ],
+      "responses": [
+        "You can contact at: 6543218907"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "course",
+      "patterns": [
+        "what are courses offered?",
+        "list of courses",
+        "list of courses offered",
+        "list of courses offered in",
+        "what are the courses offered in your college?",
+        "courses?",
+        "courses offered",
+        "courses offered in (your univrsity(UNI) name)",
+        "courses you offer",
+        "branches?",
+        "courses available at UNI?",
+        "branches available at your college?",
+        "what are the courses in UNI?",
+        "what are branches in UNI?",
+        "what are courses in UNI?",
+        "branches available in UNI?",
+        "can you tell me the courses available in UNI?",
+        "can you tell me the branches available in UNI?",
+        "computer engineering?",
+        "computer",
+        "Computer engineering?",
+        "it",
+        "IT",
+        "Information Technology",
+        "AI/Ml",
+        "Mechanical engineering",
+        "Chemical engineering",
+        "Civil engineering"
+      ],
+      "responses": [
+        "Our university offers Information Technology, computer Engineering, Mechanical engineering,Chemical engineering, Civil engineering and extc Engineering."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "information about fee",
+        "information on fee",
+        "tell me the fee",
+        "college fee",
+        "fee per semester",
+        "what is the fee of each semester",
+        "what is the fees of each year",
+        "what is fee",
+        "what is the fees",
+        "how much is the fees",
+        "fees for first year",
+        "fees",
+        "about the fees",
+        "tell me something about the fees",
+        "What is the fees of hostel",
+        "how much is the fees",
+        "hostel fees",
+        "fees for AC room",
+        "fees for non-AC room",
+        "fees for Ac room for girls",
+        "fees for non-Ac room for girls",
+        "fees for Ac room for boys",
+        "fees for non-Ac room for boys"
+      ],
+      "responses": [
+        "For Fee detail visit https://abc.ac.in/admission/ug/fee-structure"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "where is the college located",
+        "college is located at",
+        "where is college",
+        "where is college located",
+        "address of college",
+        "how to reach college",
+        "college location",
+        "college address",
+        "wheres the college",
+        "how can I reach college",
+        "whats is the college address",
+        "what is the address of college",
+        "address",
+        "location"
+      ],
+      "responses": [
+        "<a target=\"_blank\" href=\"X594+M9 Vellore, Tamil Nadu\"> here</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "hostel facility",
+        "hostel servive",
+        "hostel location",
+        "hostel address",
+        "hostel facilities",
+        "hostel fees",
+        "Does college provide hostel",
+        "Is there any hostel",
+        "Where is hostel",
+        "do you have hostel",
+        "do you guys have hostel",
+        "hostel",
+        "hostel capacity",
+        "what is the hostel fee",
+        "how to get in hostel",
+        "what is the hostel address",
+        "how far is hostel from college",
+        "hostel college distance",
+        "where is the hostel",
+        "how big is the hostel",
+        "distance between college and hostel",
+        "distance between hostel and college"
+      ],
+      "responses": [
+        "For hostel detail visit <a target=\"https://abc.ac.in/files/admissions/HostelAdmission_InformationSheet.pdf"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "event",
+      "patterns": [
+        "events organised",
+        "list of events",
+        "list of events organised in college",
+        "list of events conducted in college",
+        "What events are conducted in college",
+        "Are there any event held at college",
+        "Events?",
+        "functions",
+        "what are the events",
+        "tell me about events",
+        "what about events"
+      ],
+      "responses": [
+        "For event detail visit <a target=\"_blank\" href=\"ADD YOUR FUNCTIONS LINK OR YOUR OWN RESPONSE\"> here</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "document",
+      "patterns": [
+        "document to bring",
+        "documents needed for admision",
+        "documents needed at the time of admission",
+        "documents needed during admission",
+        "documents required for admision",
+        "documents required at the time of admission",
+        "documents required during admission",
+        "What document are required for admission",
+        "Which document to bring for admission",
+        "documents",
+        "what documents do i need",
+        "what documents do I need for admission",
+        "documents needed"
+      ],
+      "responses": [
+        "To know more about document required visit <a target=\"_blank\" href=\"ADD LINK OF ADMISSION GUIDANCE DOCUMENT FROM YOUR UNIVERSITY WEBSITE\"> here</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "floors",
+      "patterns": [
+        "size of campus",
+        "building size",
+        "How many floors does college have",
+        "floors in college",
+        "floors in college",
+        "how tall is UNI's College of Engineering college building",
+        "floors"
+      ],
+      "responses": [
+        "Our College has total 8 floors "
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "syllabus",
+      "patterns": [
+        "Syllabus for IT",
+        "what is the Information Technology syllabus",
+        "syllabus",
+        "timetable",
+        "what is IT syllabus",
+        "syllabus",
+        "What is next lecture"
+      ],
+      "responses": [
+        "Timetable provide direct to the students OR To know about syllabus visit <a target=\"_blank\" href=\"TIMETABLE LINK\"> here</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "is there any library",
+        "library facility",
+        "library facilities",
+        "do you have library",
+        "does the college have library facility",
+        "college library",
+        "where can i get books",
+        "book facility",
+        "Where is library",
+        "Library",
+        "Library information",
+        "Library books information",
+        "Tell me about library",
+        "how many libraries"
+      ],
+      "responses": [
+        "There is one huge and spacious library.timings are 8am to 6pm and for more visit <a target=\"blank\" href=\"ADD LIBRARY DETAIL LINK\">here</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "infrastructure",
+      "patterns": [
+        "how is college infrastructure",
+        "infrastructure",
+        "college infrastructure"
+      ],
+      "responses": [
+        "Our University has Excellent Infrastructure. Campus is clean. Good IT Labs With Good Speed of Internet connection"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "canteen",
+      "patterns": [
+        "food facilities",
+        "canteen facilities",
+        "canteen facility",
+        "is there any canteen",
+        "Is there a cafetaria in college",
+        "Does college have canteen",
+        "Where is canteen",
+        "where is cafetaria",
+        "canteen",
+        "Food",
+        "Cafetaria"
+      ],
+      "responses": [
+        "Our university has canteen with variety of food available"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "menu",
+      "patterns": [
+        "food menu",
+        "food in canteen",
+        "Whats there on menu",
+        "what is available in college canteen",
+        "what foods can we get in college canteen",
+        "food variety",
+        "What is there to eat?"
+      ],
+      "responses": [
+        "we serve South Indian Veg, South Indian Non Veg, North Indian Veg and North Indian Non Veg and Special Mess and many more on menu"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "What is college placement",
+        "Which companies visit in college",
+        "What is average package",
+        "companies visit",
+        "package",
+        "About placement",
+        "placement",
+        "recruitment",
+        "companies"
+      ],
+      "responses": [
+        "To know about placement visit <a target=\"_blank\" href=\"PLACEMENT INFORMATION LINK FROM YOUR UNIVERSITY WEBSITE IF THEY HAVE\">here</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "ithod",
+      "patterns": [
+        "Who is HOD",
+        "Where is HOD",
+        "it hod",
+        "name of it hod"
+      ],
+      "responses": [
+        "All Arts departments have only one hod  who available on (Dr.Alice)"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "computerhod",
+      "patterns": [
+        "Who is computer HOD",
+        "Where is computer HOD",
+        "computer hod",
+        "name of computer hod"
+      ],
+      "responses": [
+        "The Art department has only one Head of Department (HOD), Dr. Alice, who is available."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "extchod",
+      "patterns": [
+        "Who is extc HOD",
+        "Where is  extc HOD",
+        "extc hod",
+        "name of Score hod"
+      ],
+      "responses": [
+        "Different school wise hod are different.So be more clear with your school or department"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "chancellore",
+      "patterns": [
+        "what is the name of chancellore",
+        "whatv is the chancellore name",
+        "chancellore name",
+        "Who is college chancellore",
+        "Where is principal's office",
+        "chancellore",
+        "name of chancellore"
+      ],
+      "responses": [
+        "Dr.BOB is college principal and if you need any help then call your branch hod first.That is more appropriate"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sem",
+      "patterns": [
+        "exam dates",
+        "exam schedule",
+        "When is semester exam",
+        "Semester exam timetable",
+        "sem",
+        "semester",
+        "exam",
+        "when is exam",
+        "exam timetable",
+        "exam dates",
+        "when is semester"
+      ],
+      "responses": [
+        "Here is the Academic Calendar  <a target=\"_blank\" href=\"YOUR ACADEMIC CALENDER\">website</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "admission",
+      "patterns": [
+        "what is the process of admission",
+        "what is the admission process",
+        "How to take admission in your college",
+        "What is the process for admission",
+        "admission",
+        "admission process"
+      ],
+      "responses": [
+        "Application can also be submitted online through the Unversity's  <a target=\"_blank\" href=\"LINK OF ADMISSION DOCUMENT\">website</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "scholarship",
+        "Is scholarship available",
+        "scholarship engineering",
+        "scholarship it",
+        "scholarship ce",
+        "scholarship mechanical",
+        "scholarship civil",
+        "scholarship chemical",
+        "scholarship for AI/ML",
+        "available scholarships",
+        "scholarship for computer engineering",
+        "scholarship for IT engineering",
+        "scholarship for mechanical engineering",
+        "scholarship for civil engineering",
+        "scholarship for chemical engineering",
+        "list of scholarship",
+        "comps scholarship",
+        "IT scholarship",
+        "mechanical scholarship",
+        "civil scholarship",
+        "chemical scholarship",
+        "automobile scholarship",
+        "first year scholarship",
+        "second year scholarship",
+        "third year scholarship",
+        "fourth year scholarship"
+      ],
+      "responses": [
+        "Many government scholarships are supported by our university.For more details ask School Welfare office in main building"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "facilities",
+      "patterns": [
+        "What facilities college provide",
+        "College facility",
+        "What are college facilities",
+        "facilities",
+        "facilities provided"
+      ],
+      "responses": [
+        "Our university's Engineering department provides fully AC Lab with internet connection, smart classroom, Auditorium, library,canteen"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "college intake",
+      "patterns": [
+        "max number of students",
+        "number of seats per branch",
+        "number of seats in each branch",
+        "maximum number of seats",
+        "maximum students intake",
+        "What is college intake",
+        "how many stundent are taken in each branch",
+        "seat allotment",
+        "seats"
+      ],
+      "responses": [
+        "For IT, Computer and extc 60 per branch and seat may be differ for different department."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "uniform",
+      "patterns": [
+        "college dress code",
+        "college dresscode",
+        "what is the uniform",
+        "can we wear casuals",
+        "Does college have an uniform",
+        "Is there any uniform",
+        "uniform",
+        "what about uniform",
+        "do we have to wear uniform"
+      ],
+      "responses": [
+        "No there is no dress code in University "
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "committee",
+      "patterns": [
+        "what are the different committe in college",
+        "different committee in college",
+        "Are there any committee in college",
+        "Give me committee details",
+        "committee",
+        "how many committee are there in college"
+      ],
+      "responses": [
+        "For the various committe in college contact this number: ADD NUMBER"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "random",
+      "patterns": [
+        "I love you",
+        "Will you marry me",
+        "Do you love me"
+      ],
+      "responses": [
+        "I am not program for this, please ask appropriate query"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "swear",
+      "patterns": [
+        "fuck",
+        "bitch",
+        "shut up",
+        "hell",
+        "stupid",
+        "idiot",
+        "dumb ass",
+        "asshole",
+        "fucker"
+      ],
+      "responses": [
+        "please use appropriate language",
+        "Maintaining decency would be appreciated"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "vacation",
+      "patterns": [
+        "holidays",
+        "when will semester starts",
+        "when will semester end",
+        "when is the holidays",
+        "list of holidays",
+        "Holiday in these year",
+        "holiday list",
+        "about vacations",
+        "about holidays",
+        "When is vacation",
+        "When is holidays",
+        "how long will be the vacation"
+      ],
+      "responses": [
+        "Academic calender is given to you by your class-soordinators after you join your respective classes"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "sports and games",
+        "give sports details",
+        "sports infrastructure",
+        "sports facilities",
+        "information about sports",
+        "Sports activities",
+        "please provide sports and games information"
+      ],
+      "responses": [
+        "Our university encourages all-round development of students and hence provides sports facilities in the campus. For more details visit<a target=\"_blank\" href=\"/\"(LINK IF HAVE)\">here</a>"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "salutaion",
+      "patterns": [
+        "okk",
+        "okie",
+        "nice work",
+        "well done",
+        "good job",
+        "thanks for the help",
+        "Thank You",
+        "its ok",
+        "Thanks",
+        "Good work",
+        "k",
+        "ok",
+        "okay"
+      ],
+      "responses": [
+        "I am glad I helped you",
+        "welcome, anything else i can assist you with?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "task",
+      "patterns": [
+        "what can you do",
+        "what are the thing you can do",
+        "things you can do",
+        "what can u do for me",
+        "how u can help me",
+        "why i should use you"
+      ],
+      "responses": [
+        "I can answer to low-intermediate questions regarding college",
+        "You can ask me questions regarding college, and i will try to answer them"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "ragging",
+      "patterns": [
+        "ragging",
+        "is ragging practice active in college",
+        "does college have any antiragging facility",
+        "is there any ragging cases",
+        "is ragging done here",
+        "ragging against",
+        "antiragging facility",
+        "ragging juniors",
+        "ragging history",
+        "ragging incidents"
+      ],
+      "responses": [
+        "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hod",
+      "patterns": [
+        "hod",
+        "hod name",
+        "who is the hod"
+      ],
+      "responses": [
+        "HODs differ for each branch, please be more specific like: (SCORE,SCOPE,SLL)"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "introduction",
+      "patterns": [
+        "name",
+        "your name",
+        "do you have a name",
+        "what are you called",
+        "what is your name",
+        "what should I call you",
+        "whats your name?",
+        "what are you",
+        "who are you",
+        "who is this",
+        "what am i chatting to",
+        "who am i talking to",
+        "what are you"
+      ],
+      "responses": [
+        "You can call me Friday",
+        "I'm Friday Reader",
+        "I am a Chatbot.",
+        "I am your helper"
+      ]
+    },
+    {
+      "tag": "feelings",
+      "patterns": [
+        "how are you",
+        "how do you feel",
+        "are you okay",
+        "how's it going",
+        "what's up",
+        "what's new",
+        "how's everything",
+        "how are you doing",
+        "how have you been"
+      ],
+      "responses": [
+        "I'm just a program, so I don't have feelings, but thanks for asking!",
+        "I don't experience feelings like humans do, but I'm here and ready to assist you.",
+        "I'm here and fully operational, ready to help with any questions or tasks."
+      ]
+    },
+    {
+      "tag": "Hostel_Room_Change",
+      "patterns": [
+        "How can I change my hostel room?",
+        "Is there a procedure for changing rooms?",
+        "What do I need to do to switch rooms?"
+      ],
+      "responses": [
+        "To change your hostel room, fill out a request form and pay any applicable fees."
+      ]
+    },
+    {
+      "tag": "Vacate_from_Hostel",
+      "patterns": [
+        "What is the procedure to vacate from the hostel?",
+        "How do I check out of the hostel?",
+        "Can you explain the checkout process?"
+      ],
+      "responses": [
+        "To vacate from the hostel, notify management, complete checkout formalities, return keys/cards, settle dues, and collect deposits."
+      ]
+    },
+    {
+      "tag": "Hostel_Mess_Change",
+      "patterns": [
+        "How can I change my hostel mess?",
+        "Can I switch to a different mess?",
+        "What's the process for changing mess facilities?"
+      ],
+      "responses": [
+        "To change your hostel mess, inquire with administration, submit a formal request, and adjust billing/meal plans accordingly."
+      ]
+    },
+    {
+      "tag": "Hostel_Food_Menu",
+      "patterns": [
+        "hostel menu",
+        "Can I see the hostel food menu?",
+        "What meals are available?",
+        "Tell me about the food options in the hostel."
+      ],
+      "responses": [
+        "The hostel offers a menu for breakfast, lunch, and dinner. You can request to see the menu or inquire about specific dishes and allergens."
+      ]
+    },
+    {
+      "tag": "Attendance_Percentage",
+      "patterns": [
+        "How can I check my attendance percentage?",
+        "What is my attendance percentage?",
+        "Can you help me find out my attendance?"
+      ],
+      "responses": [
+        "To find out your attendance percentage, you can check with your college's attendance tracking system or ask your professor.",
+        "Your attendance percentage can typically be found by calculating the number of classes attended divided by the total number of classes.",
+        "You can inquire about your attendance percentage from your academic advisor or the attendance office at your institution."
+      ]
+    },
+    {
+      "tag": "Cancel_Course_Registration",
+      "patterns": [
+        "How can I cancel my registered course?",
+        "What is the process for course cancellation?",
+        "Can you guide me on canceling a course registration?"
+      ],
+      "responses": [
+        "To cancel your registered course, you usually need to fill out a course withdrawal form.",
+        "The process for canceling a registered course involves submitting a withdrawal request to your academic advisor or registrar's office.",
+        "You can cancel your registered course by completing a course withdrawal form and submitting it to the appropriate department."
+      ]
+    },
+    {
+      "tag": "Change_Registered_Course",
+      "patterns": [
+        "How can I change my registered course?",
+        "What is the process for changing courses?",
+        "Can you guide me on changing my course registration?"
+      ],
+      "responses": [
+        "To change your registered course, you typically need to fill out a course change request form.",
+        "The process for changing a registered course involves submitting a course change request to your academic advisor or registrar's office.",
+        "You can change your registered course by completing a course change request form and submitting it to the appropriate department."
+      ]
+    },
+    {
+      "tag": "Medical_Leave_Claim",
+      "patterns": [
+        "How can I claim medical leave?",
+        "What is the process for taking medical leave?",
+        "Can you guide me on claiming medical leave?"
+      ],
+      "responses": [
+        "To claim medical leave, you typically need to provide a medical certificate from a registered healthcare professional.",
+        "The process for claiming medical leave involves submitting a medical certificate to your HOD department or supervisor.",
+        "You can claim medical leave by informing your HR department or supervisor and providing a valid medical certificate."
+      ]
+    },
+    {
+      "tag": "view_mark_sheet",
+      "patterns": [
+        "How can I view my mark sheet?",
+        "Where can I check my exam results?",
+        "I want to see my mark sheet."
+      ],
+      "responses": [
+        "You can view your mark sheet by logging into the student portal using your credentials.",
+        "You can check your exam results on the student portal."
+      ]
+    },
+    {
+      "tag": "exam_subjects",
+      "patterns": [
+        "What subjects are included in the exam?",
+        "Which subjects do I need to study for the exam?",
+        "List the subjects for the upcoming exam."
+      ],
+      "responses": [
+        "The exam includes subjects such as Maths, Science, History, and English.",
+        "You need to study Maths, Science, History, and English for the exam."
+      ]
+    },
+    {
+      "tag": "exam_results_announcement",
+      "patterns": [
+        "When will the exam results be announced?",
+        "What is the result declaration date?",
+        "Do you know when the exam results will be out?"
+      ],
+      "responses": [
+        "The exam results will be announced on [specific date].",
+        "The result declaration date is [specific date]."
+      ]
+    },
+    {
+      "tag": "passing_criteria",
+      "patterns": [
+        "What is the passing criteria for the exam?",
+        "How much do I need to score to pass the exam?",
+        "What is the minimum passing score?"
+      ],
+      "responses": [
+        "The passing criteria for the exam is to score at least 40% in each subject.",
+        "You need to score a minimum of 40% in each subject to pass the exam."
+      ]
+    },
+    {
+      "tag": "revaluation_procedure",
+      "patterns": [
+        "Can I apply for revaluation of my exam papers?",
+        "How do I request a revaluation of my exam papers?",
+        "Is there a process for revaluation of exam papers?"
+      ],
+      "responses": [
+        "Yes, you can apply for revaluation within [specific duration] after the results are announced.",
+        "To apply for revaluation, follow the instructions provided on the official website within [specific duration]."
+      ]
+    },
+    {
+      "tag": "duplicate_mark_sheet",
+      "patterns": [
+        "What is the procedure to apply for a duplicate mark sheet?",
+        "How can I get a duplicate copy of my mark sheet?",
+        "Is there a way to obtain a duplicate mark sheet?"
+      ],
+      "responses": [
+        "To apply for a duplicate mark sheet, you need to fill out the duplicate mark sheet form and submit it along with the required documents to the exam office.",
+        "You can obtain a duplicate mark sheet by submitting the necessary documents to the exam office."
+      ]
+    },
+    {
+      "tag": "academic_calendar",
+      "patterns": [
+        "What are the important dates on the academic calendar?",
+        "Can you provide me with the academic calendar?",
+        "When does the semester start?",
+        "When is the registration deadline?",
+        "Are there any holidays during the semester?",
+        "I need to know the key dates for this academic year."
+      ],
+      "responses": [
+        "The academic calendar typically includes important dates such as the start and end of the semester, registration deadlines, holidays, and exam periods.",
+        "You can usually find the academic calendar on your university's website or by contacting the registrar's office.",
+        "Key dates on the academic calendar may include the start and end of classes, midterm exams, final exams, holidays, and registration deadlines."
+      ]
+    },
+    {
+      "tag": "apply_leave_teacher",
+      "patterns": [
+        "How can I request a leave as a teacher?",
+        "What is the process for teachers to apply for leave?",
+        "Can teachers take leave?",
+        "Is there a procedure for teachers to request time off?",
+        "I need to apply for leave as a teacher.",
+        "When a teacher needs time off, what should they do?"
+      ],
+      "responses": [
+        "Teachers can usually request leave by informing the school administration or their department head and following any specific procedures outlined by the school.",
+        "The process for teachers to apply for leave may involve submitting a leave request form to the school administration or department head.",
+        "As a teacher, you may need to notify your school administration or department head about your need for leave and follow their instructions for requesting time off."
+      ]
+    },
+    {
+      "tag": "apply_room_change",
+      "patterns": [
+        "How can I request a room change?",
+        "What is the process for changing rooms?",
+        "Can I change my assigned room?",
+        "Is there a procedure for requesting a room change?",
+        "I need to apply for a room change.",
+        "When a student wants to change rooms, what should they do?"
+      ],
+      "responses": [
+        "Students can usually request a room change by contacting the housing office or residence life department and following any specific procedures outlined by the institution.",
+        "The process for changing rooms may involve submitting a room change request form to the housing office or residence life department.",
+        "If you need to change your assigned room, you should contact the housing office or residence life department for guidance on the procedure to follow."
+      ]
+    },
+    {
+      "tag": "view_food_menu",
+      "patterns": [
+        "How can I view the food menu?",
+        "What is on the menu for today?",
+        "Is there a way to check the food options?",
+        "Can I see what's available to eat?",
+        "Where can I find the menu?",
+        "I'd like to know what's on the menu."
+      ],
+      "responses": [
+        "You can usually view the food menu by checking the dining services website or using a mobile app if available.",
+        "The food menu for the day is typically posted in the dining hall or on the dining services website.",
+        "To check the food options, you can visit the dining services website or inquire at the dining hall.",
+        "You can find the menu for today's meals either online or posted in the dining hall.",
+        "The dining services usually provide a way to view the daily food menu, either through their website or a mobile app if available."
+      ]
+    },
+    {
+      "tag": "apply_leave_hostel_student",
+      "patterns": [
+        "How can I apply for leave from the hostel?",
+        "What is the procedure for students to apply for leave from the hostel?",
+        "Can students take leave from the hostel?",
+        "Is there a process for students to request time off from the hostel?",
+        "I need to apply for leave from the hostel as a student.",
+        "When a student needs time off from the hostel, what should they do?"
+      ],
+      "responses": [
+        "Students can usually apply for leave from the hostel by submitting a leave request form to the hostel administration and following any specific procedures outlined by the institution.",
+        "The procedure for students to apply for leave from the hostel may involve filling out a leave request form and submitting it to the hostel administration.",
+        "If you need to apply for leave from the hostel, you should contact the hostel administration for guidance on the process to follow.",
+        "As a student, you may need to notify the hostel administration about your need for leave and follow their instructions for requesting time off from the hostel."
+      ]
+    },
+    {
+      "tag": "hostel_working_hours",
+      "patterns": [
+        "What are the working hours for the hostel?",
+        "When does the hostel open and close?",
+        "Is there a specific time the hostel operates?",
+        "Can I know the hostel's hours of operation?",
+        "What are the hostel's opening and closing times?",
+        "When can I access the hostel?"
+      ],
+      "responses": [
+        "The working hours for the hostel may vary depending on the policies of the institution. You can usually find this information by contacting the hostel administration.",
+        "The hostel's opening and closing times are typically posted at the hostel entrance or available through the hostel administration.",
+        "To know the hostel's hours of operation, you can inquire at the hostel reception or check with the hostel administration.",
+        "The hostel's working hours are usually specified by the institution and may vary. It's best to check with the hostel administration for the most accurate information.",
+        "You can find information about the hostel's operating hours by checking with the hostel reception or contacting the hostel administration."
+      ]
+    },
+    {
+      "tag": "apply_leave",
+      "patterns": [
+        "I want to apply for leave.",
+        "Can I take a leave?",
+        "I need to request time off.",
+        "How can I apply for leave?",
+        "I'd like to request a vacation.",
+        "Is there a procedure for taking leave?",
+        "I'm planning to take some time off."
+      ],
+      "responses": [
+        "Sure, to apply for leave, you usually need to fill out a leave request form available at the HOD department.",
+        "The process for applying for leave involves filling out a leave request form and submitting it to your supervisor or HOD department.",
+        "You can apply for leave by completing a leave request form and submitting it according to your company's policies."
+      ]
+    }
+    
+  ]
+}
